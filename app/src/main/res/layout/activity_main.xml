@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Our Store"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Type:"
+        android:textColor="@color/black"/>
+
+<RadioGroup
+    android:id="@+id/customorType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbgold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/rbsilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/rbbronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bronze"
+            android:textColor="@color/black"/>
+</RadioGroup>
+
+    <EditText
+        android:id="@+id/etitemcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Code"
+        android:inputType="textCapCharacters"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/etjumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="amount of goods"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btfinished"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finished" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ramadhan Edition"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
