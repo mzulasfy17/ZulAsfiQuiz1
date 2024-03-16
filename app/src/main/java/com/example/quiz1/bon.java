@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 
 public class bon extends AppCompatActivity implements View.OnClickListener {
-    DecimalFormat df = new DecimalFormat("#,###,##");
+    DecimalFormat df = new DecimalFormat("#,###.##");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,7 +78,7 @@ public class bon extends AppCompatActivity implements View.OnClickListener {
                 "Harga: " + hargab + "\n" +
                 "Total: " + df.format(totalb) + "\n" +
                 "Diskon Harga: " + diskon + "\n" +
-                "Diskon Member: " + member + "\n" +
+                "Diskon Member: " +df.format( member) + "\n" +
                 "Total Bayar: " + df.format(totals) + "\n" +
                 "Tipe Member: " + memberstr + "\n" +
                 "Nama: " + name;
